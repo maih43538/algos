@@ -1,4 +1,4 @@
-####Challenge: Implement a Set of unique elements without using the built-in array or hash data structures
+#### Challenge: Implement a Set of unique elements without using the built-in array or hash data structures
 
 
 Hash table - an array coupled with a hash function
