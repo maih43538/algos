@@ -13,6 +13,7 @@ func TestInsertionSort(t *testing.T) {
 		sorting.InsertionSort(in)
 		So(in[0], ShouldEqual, 7)
 
+		// best case
 		in = []int{1, 2, 3, 4, 5, 6, 7}
 		sorting.InsertionSort(in)
 		So(in[0], ShouldEqual, 1)
