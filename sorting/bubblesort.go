@@ -22,3 +22,17 @@ func BubbleSort(in []int) {
 		}
 	}
 }
+
+func BubbleSortII(in []int) {
+	// shorter version
+	swapped := true
+	for swapped {
+		swapped = false
+		for i := 0; i < len(in)-1; i++ {
+			if in[i+1] < in[i] {
+				Swap(in, i, i+1)
+				swapped = true
+			}
+		}
+	}
+}
