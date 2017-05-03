@@ -6,9 +6,13 @@ Hash table - an array coupled with a hash function
 ##### Requirements
 
 * Hash table must handle collisions
-* There are operations to insert & delete
+* There are operations to insert and delete
 * Hash table is resized when load balance is too high or too low
 
+##### Hashing Algorithm
+
+* Given an input, a unique output will be returned
+* A good one will have items evenly distributed across buckets
 
 ##### Hash Table Design
 
@@ -19,8 +23,8 @@ Hash table - an array coupled with a hash function
 ##### Hash Table Methods
 
 ##### Insertion
-1. Compute key's hash code as an int. Note that two different keys may have the same hash code.
-2. Map the hash code to an index in the slice
+1. Compute a hash code against the given key. Note that two different keys may have the same hash code.
+2. The hash code is used to specify the index of a bucket in the slice
 		hash(key) % array_length
 3. At this index, there is a linked list of keys and values. Store the key and value in this index.
 4. TODO: Check for resizing.
@@ -34,8 +38,8 @@ Hash table - an array coupled with a hash function
 2. Access bucket or traverse linked list until element is found.
 3. TODO: Check for resizing.
 
-##### TODO: Resizing
-1. Create a new resized table
-2. Iterate through the original table and traverse linked list if needed
-3. Copy items over to resized table
+##### TODO: Growing
+1. Allocate a new table with twice the size
+2. Evenly evacuate key/value pairs from the old bucket
+3. Copy it over to the new bucket and delete from old bucket
 4. Replace original table with resized table
