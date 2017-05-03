@@ -24,4 +24,4 @@ This repository contains a collection of algorithm questions and my solutions in
 | Rotation Count    | [click](https://github.com/itsanna/algos/tree/master/matrix/rotation-count)         |
 [Spiral Order](https://www.interviewcake.com/question/java/top-scores)    | [click](https://github.com/itsanna/algos/tree/master/matrix/spiral-order)       |
 [Sort scores](https://www.interviewcake.com/question/java/top-scores)    | [click](https://github.com/itsanna/algos/blob/master/interviewcake/sort-scores/main.go) |
-
+Pig Latin  | [click](https://github.com/itsanna/algos/blob/master/piglatin) |
